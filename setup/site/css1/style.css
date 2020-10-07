@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/* すべてのページに適用 */
+html {
+	font-family: sans-serif;
+}
+html * {
+	box-sizing: border-box;
+}
+body {
+	margin: 0 0 0 0;
+	background-color: #eeece9;
+}
+.wrapper {
+	margin: 0 auto 0 auto;
+	max-width: 960px;
+}
+h2 {
+	color: #3f5170;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+p {
+	line-height: 1.6;
+}
+a:link {
+	color: #d25833;
+}
+a:visited {
+	color: #d25833;
+}
+a:hover {
+	color: #e3937a;
+}
+a:active {
+	color: #ff6a3b;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* すべてのページに適用 - ヘッダー - */
+.logo {
+	margin: 50px 0 40px 0;
+	line-height: 0;
+	text-align: center;
+}
+.nav li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 30px;
+}
+.nav ul {
+	margin: 0 0 0 0;
+	padding: 20px 10px 15px 20px;
+	background-repeat: repeat-x;
+}
+.nav a:link {
+	color: #3c454d;
+	text-decoration: none;
+}
+.nav a:visited {
+	color: #3c454d;
+	text-decoration: none;
+}
+.nav a:hover {
+	color: #7b8dac;
+	text-decoration: none;
+}
+.nav a:active {
+	color: #5a9bc0;
+	text-decoration: none;
+}
+
+/* すべてのページに適用 - フッター - */
+.footer {
+	background-repeat: no-repeat;
+	margin-top: 30px;
+	padding: 80px 15px 20px 15px;
+	font-size: 12px;
+	color: #3f5170;
+}
+
+/* 個別のスタイル */
+/* index.html */
+.keyvisual {
+	margin: 15px 0 0 0;
+}
+.news-item {
+	margin: 0;
+}
+
+
+/* menu.html */
+
+.menu-item {
+	display: flex;
+	max-width: 100%;
+	border-bottom: 1px dashed #bec2c7;
+	padding: 20px 8px;
+}
+.menu-photo {
+	max-width: 100%;
+	margin-right: 16px;
+	flex: 1 1 1280;
+
+}
+.menu-text {
+	flex: 0 0 360px;
+	
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+@media (max-width: 1280px) {
+	/* 全体 - ナビゲーション */
+	.wrapper {
+		margin: 0 8px;
+	}
+	.logo {
+		margin: 30px 0;
+	}
+	.logo img {
+		width: 200px;
+	}
+	.nav {	
+		background-color: #dfddda;
+	}
+	.nav li {
+		display: block;
+	}
+	.menu-item {
+		display: flex;
+		max-width: 100%;
+		border-bottom: 1px dashed #bec2c7;
+		padding: 20px 8px;
+	}
+	.menu-photo {
+		max-width: 100%;
+		margin-right: 16px;
+		flex: 1 1 1280;
+	
+	}
+	.menu-text {
+		flex: 0 0 360px;
+		
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+}

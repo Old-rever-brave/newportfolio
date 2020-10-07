@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title></title>
+ </head>
+ <body>
+		<nav class="navbar navbar-expand navbar-light bg-light">
+				<a href="index.html#menu" class="nav-link">メニューページへ戻る</a>
+				<ul class="navbar-nav">
+				  <li class="nav-item"><a href="lamp.html" class="nav-link">lamp</a></li>
+				  <li class="nav-item"><a href="Laravel.html" class="nav-link">Laravel</a></li>
+				  <li class="nav-item"><a href="anaconda-navigator.html" class="nav-link">anaconda-navigator</a></li>
+          <li class="nav-item"><a href="Django.html" class="nav-link">Django</a></li>
+          <li class="nav-item"><a href="Rails.html">Rails</a></li>
+          <li class="nav-item"><a href="VueNuxt.html" class="nav-link">VueNuxt</a></li>
+          <li class="nav-item"><a href="Express.html" class="nav-link">Express</a></li>
+				</ul>
+			  </nav>
+		  　</div>
+　 <h2 class="mt-5">Railsインストール</h2>
+  <hr class="mt-0 mb-2">
+  <p></p>
+
+  <h4 class="mt-5">各種パッケージインストールしましょう。</h4>
+  <hr class="mt-0 mb-3">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="img/github.png" class="img-fluid">
+    </div>
+    <div class="col-md-6 mt-2 mt-md-0">
+        <p><b>各種パッケージインストールしましょう。</b></p>
+        <p>sudo apt-get -y install git curl g++ make</p>
+        <p>sudo apt-get -y install zlib1g-dev libssl-dev libreadline-dev</p>
+        <p>sudo apt-get -y install libyaml-dev libxml2-dev libxslt-dev</p>
+        <p>sudo apt-get -y install sqlite3 libsqlite3-dev nodejs</p>
+        <p><b>rbenvを入れます、の前にgithubをいれます。※多分デフォルトで入っているか怪しい・・・</b></p>
+        <p><b>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</b></p>
+      <p><b>brew install rbenv</b></p>
+      <p>sudo apt install git</p>
+  　　<p>git clone https://github.com/sstephenson/rbenv.git .rbenv</p>
+    </div>
+  </div>
+
+  <h4 class="mt-5">ruby-build</h4>
+  <hr class="mt-0 mb-3">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="img/gem.jpg" class="img-fluid">
+    </div>
+    <div class="col-md-6 mt-2 mt-md-0">
+      <p class="mb-0"></p>
+      <p><b>PATHを通します。</b></p>
+      <p>echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc</p>
+      <p>echo 'eval "$(rbenv init -)"' >> ~/.bashrc</p>
+      <p>exec $SHELL</p>
+      <b><p>Railsのプラグインのディレクトリを作成します。</b></p>
+      <b><p>.bash_profileファイルを開く</b></p>
+      <p>vim ~/.bash_profile</p>
+      <b><p>以下追記</b></p>
+      <p>if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi</p>
+      <p>mkdir -p ~/.rbenv/plugins</p>
+      <p>cd ~/.rbenv/plugins</p>
+      <b><p>Rubyをインストールします。</b></p>
+      <p>git clone https://github.com/sstephenson/ruby-build.git</p>
+      <p>rbenv install 2.6.2</p>
+    </div>
+  </div>
+
+  <h4 class="mt-5">Rails</h4>
+  <hr class="mt-0 mb-3">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="img/rbenv.jpeg" class="img-fluid">
+    </div>
+    <div class="col-md-6 mt-2 mt-md-0">
+      <p class="mb-0"></p>
+      <p><b>※ひどいときは二時間ほどおわりません・・・</b></p>
+      <p>echo 'eval "$(rbenv init -)"' >> ~/.bashrc</p>
+      <b><p>Rubyのversion設定。</b></p>
+      <p>rbenv global 2.6.2</p>
+      <b><p>一旦、ターミナルから抜けた方がいいかもしれません。</b></p>
+      <p>exit</p>
+      <p>exit</p>
+      <b><p>ファイルを作成します</b></p>
+      <p>touch .gemrc</p>
+      <p>vi touch .gemrc</p>
+    </div>
+  </div>
+
+  <h4 class="mt-5">Rails</h4>
+  <hr class="mt-0 mb-3">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="img/rails.jpg" class="img-fluid">
+    </div>
+    <div class="col-md-6 mt-2 mt-md-0">
+      <p class="mb-0"></p>
+      <b><p>※要注意</b></p>
+      <p>エディタの画面になるのでインサート（挿入）をするコマンドiを押してください。そして以下をコピペ</p>
+      <p>install: --no-document</p>
+      <p>update: --no-document</p>
+      <b><p>※要注意②下記の手順で強制的に保存します。</b></p>
+      <p>esc　:wq!</p>
+      <b><p>Railsを導入します。version→(6)後、設定</b></p>
+      <p>gem install rails -v '6'</p>
+      <p>rbenv rehash</p>
+      <b><p>Railsプロジェクトを導入します。</b></p>
+      <p>rails new　プロジェクト名</p>
+      <p>cd　プロジェクト名</p>
+      <p>rails s</p>
+      <b><p>ターミナル上で下記のリンクがでると完了です</b></p>
+      <p><a href="localhost:3000" class="nav-link">localhost:3000</a></p>
+      </div>
+   </div>
+</div>
+  <nav class="nav">
+      <li class="nav-item"><a href="lamp.html" class="nav-link">lamp</a></li>
+      <li class="nav-item"><a href="Laravel.html" class="nav-link">Laravel</a></li>
+      <li class="nav-item"><a href="anaconda-navigator.html" class="nav-link">anaconda-navigator</a></li>
+      <li class="nav-item"><a href="Django.html" class="nav-link">Django</a></li>
+      <li class="nav-item"><a href="Rails.html">Rails</a></li>
+      <li class="nav-item"><a href="VueNuxt.html" class="nav-link">VueNuxt</a></li>
+      <li class="nav-item"><a href="Express.html" class="nav-link">Express</a></li>
+    <li class="nav-item"><a href="index.html#menu" class="nav-link">メニューページへ戻る</a></li>
+  </nav>
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+ </body>
+</html>

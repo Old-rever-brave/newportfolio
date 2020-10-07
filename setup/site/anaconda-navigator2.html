@@ -1,0 +1,80 @@
+<!doctype html>
+ <html lang="ja">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1280">
+  <link rel="stylesheet" href="css/styles2.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title></title>
+ </head>
+ <body>
+  　</div> 
+　 <h2 class="mt-5">Anacondaインストール</h2>
+  <hr class="mt-0 mb-2">
+  <p></p>
+
+  <h4 class="mt-5">Anaconda</h4>
+  <hr class="mt-0 mb-3">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="img/anaconda.png" class="img-fluid">
+    </div>
+    <div class="col-md-6 mt-2 mt-md-0">
+      <p>Anacondaをダウンロードします。</p>
+      <p>https://www.anaconda.com/distribution/#download-section</p>
+      <p>2.7か3.7のバージョンがあります。のでお好きな方で。3.7の手順のほうで記載していきます</p>
+      <p><b>bashで解凍しますが、ホームディレクトリにコピペか切り取りでもっていった方が多分楽です。</b></p>
+      <p>bash Anaconda3-2019.03-Linux-x86_64.sh</p>
+      <p><b>所有権変更をします</b></p>
+      <p>chmod 755 anaconda3/bin/conda</p>        
+    </div>
+  </div>
+
+  <h4 class="mt-5">MySQL導入手順</h4>
+  <hr class="mt-0 mb-3">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="img/python3.png" class="img-fluid">
+    </div>
+    <div class="col-md-6 mt-2 mt-md-0">
+      <p class="mb-0"></p>
+      <p><b>PATHを通します。</b></p>
+      <p>which python</p>
+      <p>which ipython</p>
+      <p>which pip</p>
+      <p>vi ~/.bashrc</p>
+      <b><p>↑↑↑※要注意</b></p>
+     <p>エディタの画面になるのでインサート（挿入）をするコマンドiを押してください。そして以下をコピペ</p>
+     <p>export PATH=~/anaconda3/bin:$PATH</p>
+    </div>
+  </div>
+
+  <h4 class="mt-5">インストール</h4>
+  <hr class="mt-0 mb-3">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="img/1.png" class="img-fluid">
+    </div>
+    <div class="col-md-6 mt-2 mt-md-0">
+      <p class="mb-0"></p>
+     <b><p>②下記の手順で強制的に保存します。</b></p>
+     <p>esc</p>
+     <p>:wq!</p>
+     <b><p>condaコマンドにて一度、古いデータを綺麗にします。</b></p>
+     <p>conda config –remove channels conda-forge</p>
+     <p><b>anacondaを開きます。</b></p>
+     <p>anaconda-navigator</p>
+     <p>図のような画面がでてきます。</p>
+    </div>
+  </div>
+ </div>      
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <nav class="nav">
+    <li class="nav-item"><a href="Django2.html" class="nav-link">Django</a></li>
+    <li class="nav-item"><a href="index.html#menu" class="nav-link">メニューページへ戻る</a></li>
+   </nav>    
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+ </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ubuntu</title>
+    <meta name="viewport" content="width=1280">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="ページURL">
+    <meta property="og:image" content="画像URL">
+    <meta property="fb:app_id" content="アプリID">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="header-left">
+        </div>
+        <div class="header-right">
+          <a href="index.html">top</a>
+          <a href="#menu">setuplist</a>
+          <a href="#Koment">終わりに</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-visual">
+      <link rel="stylesheet" href="css11/bootstrap.css">
+      <div class="container">
+        <h1 class="top-title">Love ubuntu</h1>
+        <img class="main-image" src="img/ubuntu2018.jpg" alt="ubuntu">
+        <h2>ubuntuを使い始めて、約3年が経過しました。</h2> 
+        <h2>近日はconohaでvpsをテストサーバーとして使用したり、古いwindowsをubuntuのみのOSとして改造したりやってます。</h2>
+        <h2>また近日ではAWSec2等も利用しております。</h2>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <img class="main-image" src="img/conoha.png" alt="ubuntu">
+        <h3>VPSをGUI(マウスの着いた画面）でご利用する際は以下のURLの手順をお試しください。</h3>
+        <h3> <a href=https://qiita.com/yuuki-furue/items/88b4a3f49ce39917230b>詳しくはこちら！</a></h3>
+        <h3> 以下は全く触ったことのない方々向けに記載しております。</h3>
+        <p>アップデートをかけます</p>
+        <p>sudo apt-get update</p>
+        <p>アップグレードをかけます</p>
+        <p>sudo apt-get upgrade</p>
+        <p>ファイヤーウォールを切ります</p>
+        <p>sudo ufw disable</p>
+        <p>SELINUXを切ります。</p>
+        <p>sudo service apparmor stop</p>
+        <p>sudo apt install net-tools</p>
+        <p>gitのインストール</p>
+        <p>sudo apt install git</p>
+        <p>sshのインストール</p>
+        <p>sudo apt install openssh-server</p>
+        <p> sudo systemctl  start ssh</p>
+        <p>だいたいこれで、一通りは不自由ないかと思われます。</p>
+        <b><p>注意点：ubuntuでアップグレードをかける際、ubuntuソフトウェアを開かないようお願いいたします。※最悪の場合、バグがでます。</p></b>
+        <b><p>今回、スクリーンショットをターミナルにて撮影しているシーンがあるので、ターミナルが何回か写っております。何卒ご容赦ください。</p></b>
+        <p>スクリーンショットコマンド</p>
+        <p>→gnome-screenshot</p>
+    </div>
+    <div class="menu" id="menu">
+      <div class="container">
+        <h2>メニュー</h2>
+        <b><p>以下はUbuntuと相性が良さそうなフレームワークを記載しております</p>
+        <b><p>画像の青く光っている文字はリンクとなっております。ご参照いただける際はそちらをお読みつつ戻るボタンを押して下さいませ。 進むと戻るリンクはページ下部についております</p>
+        <p>リンククリック後はPC版で見たほうがよいかもしれません。携帯でご参照の方は下記の（2）のリンクをクリックしてください。よろしくお願いします</p></b>
+        <div class="menu-card-wrapper">
+          <div class="menu-card">
+            <div class="menu-card-inner">
+              <img class="menu-image" src="images/Apache.png">
+              <h3 class="menu-title"><a href="lamp.html" class="dropdown-item">lamp</a></h3>
+              <h3 class="menu-title"><a href="site/lamp2.html" class="dropdown-item">lamp2</a></h3>
+              <p class="menu-text">
+                Linux、Apache、MySQL、PHPの環境でWebシステムを開発すること。LAMPとはそれぞれの頭文字。</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-inner">
+              <img class="menu-image" src="images/Laravel1.png">
+              <h3 class="menu-title"><a href="Laravel.html" class="dropdown-item">Laravel</a></h3>
+              <h3 class="menu-title"><a href="site/Laravel2.html" class="dropdown-item">Laravel2</a></h3>
+              <p class="menu-text">
+              PHPのフルスタックフレームワークで最近流行っております。ディレクトリ構成が自由なため、柔軟な開発に強い</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-inner">
+              <img class="menu-image" src="images/django2.png">
+                <h3 class="menu-title"><a href="anaconda-navigator.html" class="dropdown-item">django</a></h3>
+                <h3 class="menu-title"><a href="site/anaconda-navigator2.html" class="dropdown-item">django2</a></h3>
+                <p class="menu-text">
+                 pythonでweb開発をするためのフレームワークです。今回はAnaconda(アナコンダ)。で導入。</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-inner">
+              <img class="menu-image" src="images/rails.jpg">
+              <h3 class="menu-title"><a href="Rails.html" class="dropdown-item">ruby on rails</a></h3>
+              <h3 class="menu-title"><a href="site/Rails2.html" class="dropdown-item">ruby on rails2</a></h3>
+              <p class="menu-text">
+                日本人が開発した超高速開発フルスタックフレームワーク。改修がしづらいとの噂が・・・</p>
+             </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-inner">
+              <img class="menu-image" src="images/vue.png">
+              <h3 class="menu-title"><a href="VueNuxt.html" class="dropdown-item">Vue.js</a></h3>
+              <h3 class="menu-title"><a href="site/VueNuxt2.html" class="dropdown-item">Vue.js2</a></h3>
+              <p class="menu-text">
+                 大規模化しても記述をわかりやすくするためテンプレートを使用し短く記述できる。Laravelと組み合わせて使用可能。</p>
+              </p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-inner">
+              <img class="menu-image" src="images/exe.jpeg">
+              <h3 class="menu-title"><a href="Express.html" class="dropdown-item">Express.js</a></h3>
+              <h3 class="menu-title"><a href="site/Express2.html" class="dropdown-item">Express.js2</a></h3>
+              <p class="menu-text">
+              node.jsを用いるフレームワーク。サーバー処理スピードが高速。しかし未だに人気がない・・・</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Koment" id="Koment"></div>
+            <p>ご視聴ありがとうございました</p>
+          <p><a href="http://yuuki.conohawing.com/newportfolio/website.html" class="dropdown-item">トップページへ戻る</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

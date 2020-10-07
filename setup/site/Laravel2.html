@@ -1,0 +1,76 @@
+<!doctype html>
+ <html lang="ja">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1280">
+  <link rel="stylesheet" href="css/styles2.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title></title>
+ </head>
+ <body>
+  　</div>
+  <h2 class="mt-5">Laravelインストール</h2>
+    <hr class="mt-0 mb-2">
+    <p></p>
+
+    <h4 class="mt-5">各種インストール</h4>
+    <hr class="mt-0 mb-3">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="img/composer.jpg" class="img-fluid">
+      </div>
+      <div class="col-md-6 mt-2 mt-md-0">
+          <p class="mb-0"></p>
+          <b><p>必要なPHP拡張パッケージをインストールします。</b></p>
+          <p>sudo apt-get install php-intl</p>
+  　　　　　<p>sudo apt install php-mbstring php-xml php-json</p>
+          <p>sudo apt install php7.2-cli</p>
+     　　 <b><p>SQLiteの接続用ドライバーをインストールします。</b></p>
+      　　<p>sudo apt-get install php7.2-sqlite3</p>
+      　　<b><p>MySqlの接続用ドライバーは以下です。</b></p>
+          <p>sudo apt-get install php7.2-mysql</p>
+          <b><p>curlをインストールする</b></p>
+          <p>sudo apt install curl</p>
+          <b><p>Composerというパッケージ管理するためのアプリをインストール</b></p>
+          <p>curl -sS https://getcomposer.org/installer </p>
+          <b><p>ローカルへパスを通します</b></p>
+          <p>sudo mv composer.phar /usr/local/bin/composer</p>
+          <p>chmod 755 /usr/local/bin/composer</p>
+          <p>export PATH=/usr/local/bin:$PATH</p>
+          <p>which composer</p>
+      </div>
+     </div>
+
+      <h5 class="mt-5">Laravel インストールSETUP</h5>
+       <hr class="mt-0 mb-3">
+       <div class="row">
+      <div class="col-md-6">
+        <img src="img/Laravel.png" class="img-fluid">
+      </div>
+      <div class="col-md-6 mt-2 mt-md-0">
+        <p class="mb-0"></p>
+        <b><p>Laravel インストール</b></p>
+        <p>composer global require "laravel/installer"</p>
+        <p><b>PATHを通します。</b></p>
+        <p>export PATH="$PATH:/.config/composer/vendor/bin"</p>
+        <b><p>homeにある.bashrcに追加する</b></p>
+        <p>source ~/.bashrc</p>
+        <b><p>プロジェクト開発から起動まで</b></p>
+        <p>composer create-project --prefer-dist laravel/laravel aprication</p>
+        <p>cd aprication</p>
+        <p>php artisan serve</p>
+        <b><p>terminal上のurlへ移動</b></p>
+        <p>こちらの画面がでればせいこうです。</p>
+      </div>
+    </div>
+   </div>
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <nav class="nav">
+    <li class="nav-item"><a href="anaconda-navigator2.html" class="nav-link">anaconda-navigator</a></li>
+    <li class="nav-item"><a href="index.html#menu" class="nav-link">メニューページへ戻る</a></li>
+   </nav>
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+ </body>
+</html>

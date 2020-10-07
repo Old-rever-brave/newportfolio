@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Linux</title>
+    <meta name="viewport" content="width=1280">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="responsive.css">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="ページURL">
+    <meta property="og:image" content="画像URL">
+    <meta property="fb:app_id" content="アプリID">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="header-left">
+        </div>
+        <div class="header-right">
+          <a href="index.html">top</a>
+          <a href="#menu">setuplist</a>
+          <a href="#Koment">コメント</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-visual">
+      <div class="container">
+        <h1 class="top-title">LoveBMVOX</h1>
+        <h2 class="top-subtitle"></h2>
+        <p class="top-text"></p>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <h2>オラクルバーチャルボックスとubuntuを導入して、約二年が経過しました。これまでの作業記録を記載していきます。</h2>
+        <img class="main-image" src="images/ubun.jpg" alt="ubuntu">
+        <h3>ubuntuの導入に関して、初期設定で必要なこと<a href=https://eng-entrance.com/virtualbox-install>詳しくはこちらを参照で！</a></h3>
+        <p>上記の内容のように、ISOファイルまたはDVDファイル等をダウンロードし、上記に記載した仮想マシン（vmbox）の中へとOSをインストールしていきます。</p>
+        <p>アップデートをかけます</p>
+        <p>sudo apt-get update</p>
+        <p>アップグレードをかけます</p>
+        <p>sudo apt-get upgrade</p>
+        <p>ファイヤーウォールを切ります</p>
+        <p>sudo ufw disable</p>
+        <p>SELINUXを切ります。</p>
+        <p>sudo service apparmor stop</p>
+        <p>sudo apt install net-tools</p>
+        <p>sudo apt install git</p>
+        <p>だいたいこれで、一通りは不自由ないかと思われます。</p>
+        <p>自己環境で開発する設定等は下記のサイトが一番無難に良かったです。さらに詳しくは下記をご参照くださいませ。</p>
+        <p><a href="https://eng-entrance.com/virtualbox-install">ココ！</a></p>
+        <b><p>注意点：ubuntuでアップグレードをかける際、ubuntuソフトウェアを開かないようお願いいたします。※最悪の場合、バグがでます。</p></b>
+        <b><p>今回、スクリーンショットをターミナルにて撮影しているシーンがあるので、ターミナルが何回か写っております。何卒ご容赦ください。</p></b>
+        <p>スクリーンショットコマンド→gnome-screenshot</p>
+    </div>
+    <div class="menu" id="menu">
+      <div class="container">
+        <h2>メニュー</h2>
+        <b><p>画像の青く光っている文字はリンクとなっております。ご参照いただける際はそちらをお読みつつ戻るボタンを押して下さいませ。 戻るリンクはページ下部についております。よろしくお願いします</p>
+        <p>リンククリック後はPC版で見たほうがよいかもしれません。携帯でご参照の方は下記の（lamp2）のリンクをクリックしてください。よろしくお願いします</p></b>
+        <div class="menu-card-wrapper">
+          <div class="menu-card">
+            <div class="menu-card-inner">
+              <img class="menu-image" src="images/Apache.png">
+              <h3 class="menu-title"><a href="lamp.html" class="dropdown-item">lamp</a></h3>
+              <h3 class="menu-title"><a href="site/lamp2.html" class="dropdown-item">lamp2</a></h3>
+                <p class="menu-text">
+                <p>Linux、Apache、MySQL、PHPの環境でWebシステムを開発すること。それぞれの頭文字をとってLAMPと言います。開発が主流となっている開発環境です。二年前に初めて導入したのですが、実際難しくは無かったです。ＷindowsではxamppをmacosではMAMPをインストールすることで完了します。本サイトではlinuxos(ubuntu)での構築方法を記載いたしております。</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-inner">
+              <img class="menu-image" src="images/Laravel1.png">
+              <h3 class="menu-title"><a href="Laravel.html" class="dropdown-item">Laravel</a></h3>
+              <h3 class="menu-title"><a href="site/Laravel2.html" class="dropdown-item">Laravel2</a></h3>
+              <p class="menu-text">
+                <p>PHPのフルスタックフレームワークで最近流行っております。特徴について➡⓵設定をあとから色々と追加しなくてはならないため、初期設定の難しさがある。➁Eloquent ORM(アクティブレコードによるデーター操作の実装)の書き方に迷う。⓷ディレクトリ構成が自由なので柔軟性がある。⓸反面、設定や書き方等がばらつきやすく、最初にさわるフレームワークとしてはあまりよくないかもしれません。</p>
+              </p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-inner">
+              <img class="menu-image" src="images/django2.png">
+              <h3 class="menu-title"></h3>
+              <p class="menu-text">
+                <h2><a href="anaconda-navigator.html" class="dropdown-item">django</a></h2>
+                <h2><a href="site/anaconda-navigator2.html" class="dropdown-item">django2</a></h2>
+　　　　　　　　<p class="menu-text">
+　　　　　　　  <p>pythonでweb開発をするためのフレームワークです。もともとpythonは機械学習（ai）やディープラーニングで用いられるプログラミング言語。動作スピードが早いということで、web開発のバックエンドに近年では使用されるようになったそうです。環境構築にAnacondaを使用すると楽です。導入する際使用するディストリビューションのAnaconda(アナコンダ)は、「データサイエンス」や「機械学習」の用途でも使用します。インストールは楽ですが、時間がかかるのでご注意。</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-inner">
+              <img class="menu-image" src="images/rails.jpg">
+              <h3 class="menu-title"><a href="Rails.html" class="dropdown-item">ruby on rails</a></h3>
+              <h3 class="menu-title"><a href="site/Rails2.html" class="dropdown-item">ruby on rails2</a></h3>
+              <p class="menu-text">
+                　<p>Ruby on railsとはRubyのフルスタックフレームワークです。こちらは世界というより日本で流行っております。その理由は恐らくRuby自体を開発したのが日本人、にもかかわらず…Windowsとの相性が良くない。環境構築の際、一度もうまくいかなかったのです（笑）ひとことで言うと魔法のようなフレームワークです。リレーションシップやActive Record等の機能は他の追随を許さないといっても過言ではないでしょう。Active Record=企業のシステム開発において頻繁に認められるデザインパターン。(crud)クラウドともいう。c=crete=新規作成、r=read=読込、u=update=更新。d=delete=削除。※編集＝editはupdateに含まれます。</p>
+             </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-inner">
+              <img class="menu-image" src="images/vue.png">
+              <h3 class="menu-title"><a href="VueNuxt.html" class="dropdown-item">Vue.js</a></h3>
+              <h3 class="menu-title"><a href="site/VueNuxt2.html" class="dropdown-item">Vue.js2</a></h3>
+              <p class="menu-text">
+                私もよく使っているjqueryというライブラリはDOM操作はしやすいものの、大規模化するとコードの修正や可読に疲れてしまうことがあります。
+                大規模化しても記述をわかりやすくするためテンプレートを使用する。そこで注目されたのが、Vue.jsです。VueのTemplatesのメリットは、ほぼHTML・CSSの普通の書き方と同じように書くことができること。【DOM＝（Document Object Model）とは、xmlやhtmlの各要素、pタグやimgタグの類の要素にアクセスする仕組みのことです。】またRailsやLaravel等のフレームワークに組み込むこともできます。記述も短くなるのでより短時間でハイレベルな開発も可能です</p>
+              </p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-inner">
+              <img class="menu-image" src="images/exe.jpeg">
+              <h3 class="menu-title"><a href="Express.html" class="dropdown-item">Express.js</a></h3>
+              <h3 class="menu-title"><a href="site/Express2.html" class="dropdown-item">Express.js2</a></h3>
+              <p class="menu-text">
+              node.jsを用いるフレームワーク。本来フロントエンドで使用するjavascriptですが、こちらはサーバーサイドで使用します。そのフレームワークです。2009年に生まれたnode.jsはリアルタイム通信に強い分野です。高速トラフィックの処理等の分野でも有効ですね。主なサービスはPAYPALなどが有名ですね。軽量で高速開発をやりやすく、導入も割と楽な部分もあります。ただこちらのフレームワークの場合、一つだけ使いづらい点があり、若干どこを編集したら使いやすいかわかりづらい点がございます。またnode.js自体がかなり癖のあるプログラミング言語である為、習得にやや困難な部分もございます</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Koment" id="Koment"></div>
+            <p>ご視聴ありがとうございました</p>
+          <p>よければコメントよろしくお願いします</p>
+          <p>↓↓↓</p>
+          <a href="http://yuuki.conohawing.com/wp/?p=100" class="dropdown-item">コメント</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

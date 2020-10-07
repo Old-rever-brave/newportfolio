@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Chart</title>
+</head>
+<body>
+  <canvas id="chart2">
+  </canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script>
+    (function() {
+      'use strict';
+
+      var type = 'radar';
+
+      var data = {
+        labels: [ 'lamp','Laravel', 'Ruby on Rails', 'Django', 'Vue.js&Nuxt.js'],
+        datasets: [{
+          label: '分',
+          data: [60, 30, 90, 120, 20],
+          backgroundColor: 'rgba(255, 0, 0, 0.3)'
+        },]
+      };
+
+      var options = {
+        scale: {
+          ticks: {
+            // suggestedMin: 0,
+            beginAtZero: true,
+            suggestedMax: 150
+          }
+        }
+      };
+
+      var ctx = document.getElementById('chart2').getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: type,
+        data: data,
+        options: options
+      });
+    })();
+  </script>
+</body>
+</html>

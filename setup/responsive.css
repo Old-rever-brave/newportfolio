@@ -1,0 +1,44 @@
+@charset "utf-8";
+@media (max-width: 1024px) {
+  .main-visual {
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+  .top-title {
+    font-size: 100px;
+  }
+  .menu-card {
+    width: 50%;
+  }
+}
+@media (max-width: 670px) {
+  .header-left {
+    display: none;
+  }
+  .header-right {
+    float: none;
+    text-align: center;
+  }
+  .header-right a {
+    font-size: 14px;
+  }
+  .main {
+    padding: 100px 0;
+  }
+  .main-image {
+    width: 350px;
+  }
+  .main p {
+    font-size: 20px;
+  }
+  .footer-right {
+    padding-top: 20px;
+  }
+  .menu-card {
+    width: 100%;
+  }
+  
+  .contact input, .contact textarea {
+    width: 100%;
+  }
+}
